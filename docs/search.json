@@ -11,7 +11,7 @@
     "href": "Estagiarios/Estagiarios.html",
     "title": "Estagiário",
     "section": "",
-    "text": "About this site\n\nprint(\"Bem vindo \")\n\n[1] \"Bem vindo \""
+    "text": "{fig-alt=” Professor cordenador do LABGEO” fig-align=“left”}"
   },
   {
     "objectID": "Historia/sobre.html",
