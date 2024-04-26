@@ -11,8 +11,9 @@ website:
       - href: Historia/sobre.qmd
         text: Historia
       - href: Estagiarios/Estagiarios.qmd
-        text: Pos
+        text: Estagiario
       - href: pos/pos.qmd
+        text: Pos
       
 
 format:

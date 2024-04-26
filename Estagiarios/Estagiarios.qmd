@@ -2,17 +2,5 @@
 title: "Estagiário"
 ---
 
-```{r}
-
-
-```
-
-**duhashduhsahdusa**
-
-![Profeesor](elpidio.jpg){fig-align="left"}
-
-```{r}
-
-print("Bem vindo ")
-
-```
+![Elpidio](elpidio.jpg){width="200px" height="200px"
+style="float: left; margin-right: 15px;"}

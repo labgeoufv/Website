@@ -18,13 +18,13 @@
     "href": "Estagiarios/Estagiarios.html",
     "title": "Estagiário",
     "section": "",
-    "text": "duhashduhsahdusa\n\n\n\nProfeesor\n\n\n\nprint(\"Bem vindo \")\n\n[1] \"Bem vindo \""
+    "text": "Elpidio"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Website",
     "section": "",
-    "text": "BEM VINDO AO LABGEO\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\n  ggplot(data = penguins, \n                       aes(x = flipper_length_mm,\n                           y = body_mass_g)) +\n    geom_point()"
+    "text": "BEM VINDO AO LABGEOz\nAbrindo pacotes\n\nlibrary(dplyr, warn.conflicts = FALSE)\nlibrary(ggplot2, warn.conflicts = FALSE)\nlibrary(palmerpenguins, warn.conflicts = FALSE)\nlibrary(plotly, warn.conflicts = FALSE)\n\n\nmass_flipper &lt;- ggplot(data = penguins, \n                       aes(x = flipper_length_mm,\n                           y = body_mass_g)) +\n  geom_point(aes(color = species, \n                 shape = species),\n             size = 3,\n             alpha = 0.8) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(title = \"Penguin size, Palmer Station LTER\",\n       subtitle = \"Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins\",\n       x = \"Flipper length (mm)\",\n       y = \"Body mass (g)\",\n       color = \"Penguin species\",\n       shape = \"Penguin species\")\n\n\nggplotly(username = mass_flipper)"
   }
 ]
