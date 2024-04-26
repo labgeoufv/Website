@@ -2,10 +2,15 @@
 title: "Website"
 ---
 
-This is a Quarto website.
+
 BEM VINDO AO LABGEO
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+
 
 ```{r}
-1 + 1
+library(dplyr)
+library(geobr)
+
+geobr::read_biomes() %>% plot()
+
 ```
