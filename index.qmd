@@ -18,7 +18,7 @@ library(plotly, warn.conflicts = FALSE)
 
   
 ```{r}
-mass_flipper <- ggplot(data = penguins, 
+plot <- ggplot(data = penguins, 
                        aes(x = flipper_length_mm,
                            y = body_mass_g)) +
   geom_point(aes(color = species, 
@@ -26,14 +26,14 @@ mass_flipper <- ggplot(data = penguins,
              size = 3,
              alpha = 0.8) +
   scale_color_manual(values = c("darkorange","purple","cyan4")) +
-  labs(title = "Penguin size, Palmer Station LTER",
-       subtitle = "Flipper length and body mass for Adelie, Chinstrap and Gentoo Penguins",
-       x = "Flipper length (mm)",
-       y = "Body mass (g)",
-       color = "Penguin species",
-       shape = "Penguin species")
+  labs(title = "Relação tamanho de nadadeira e Peso",
+       subtitle = "Especies de penguins Adelie, Chinstrap e Gentoo",
+       x = "Comprimento da nadadeira (mm)",
+       y = "Peso (g)",
+       color = "Espécies de pinguins",
+       shape = "Espécies de pinguins")
 
 
-ggplotly(username = mass_flipper)
+ggplotly(username = plot)
 ```
 
