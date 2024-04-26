@@ -4,8 +4,10 @@ title: "Website"
 
 BEM VINDO AO LABGEO
 
-```{r, warning=FALSE}
 
+
+
+```{r, warning=FALSE}
 
 library(dplyr)
 library(ggplot2)
