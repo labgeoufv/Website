@@ -5,13 +5,14 @@ project:
 website:
   title: "LabGeo"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - href: Historia/sobre.qmd
         text: Historia
       - href: Estagiarios/Estagiarios.qmd
         text: Estagiários
+      - href: pos/pos.qmd 
 
       
 format:
