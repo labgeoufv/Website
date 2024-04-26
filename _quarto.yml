@@ -11,10 +11,10 @@ website:
       - href: Historia/sobre.qmd
         text: Historia
       - href: Estagiarios/Estagiarios.qmd
-        text: Estagiários
-      - href: pos/pos.qmd 
-
+        text: Pos
+      - href: pos/pos.qmd
       
+
 format:
   html:
     theme: cosmo
