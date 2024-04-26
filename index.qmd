@@ -2,15 +2,20 @@
 title: "Website"
 ---
 
-
 BEM VINDO AO LABGEO
 
+```{r, warning=FALSE}
 
 
-```{r}
 library(dplyr)
-library(geobr)
+library(ggplot2)
+library(palmerpenguins)
 
-geobr::read_biomes() %>% plot()
 
+  ggplot(data = penguins, 
+                       aes(x = flipper_length_mm,
+                           y = body_mass_g)) +
+    geom_point()
+  
+  
 ```

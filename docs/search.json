@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Website",
     "section": "",
-    "text": "This is a Quarto website. BEM VINDO AO LABGEO To learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "BEM VINDO AO LABGEO\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\n  ggplot(data = penguins, \n                       aes(x = flipper_length_mm,\n                           y = body_mass_g)) +\n    geom_point()"
   },
   {
     "objectID": "about.html",
