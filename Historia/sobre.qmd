@@ -1,6 +1,8 @@
 ---
-title: "About"
+title: "Historia do LabGeo"
 ---
+
+
 
 About this site
 

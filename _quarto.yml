@@ -8,9 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - Estagiarios.qmd
+      - href: Historia/sobre.qmd
+        text: Historia
+      - href: Estagiarios/Estagiarios.qmd
+        text: Estagiários
 
+      
 format:
   html:
     theme: cosmo

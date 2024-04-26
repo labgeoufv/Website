@@ -7,17 +7,17 @@
     "text": "BEM VINDO AO LABGEO\n\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(ggplot2)\nlibrary(palmerpenguins)\n\n\n  ggplot(data = penguins, \n                       aes(x = flipper_length_mm,\n                           y = body_mass_g)) +\n    geom_point()"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "Estagiarios.html",
-    "href": "Estagiarios.html",
+    "objectID": "Estagiarios/Estagiarios.html",
+    "href": "Estagiarios/Estagiarios.html",
     "title": "Estagiário",
     "section": "",
     "text": "About this site\n\nprint(\"Bem vindo \")\n\n[1] \"Bem vindo \""
+  },
+  {
+    "objectID": "Historia/sobre.html",
+    "href": "Historia/sobre.html",
+    "title": "Historia do LabGeo",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   }
 ]
