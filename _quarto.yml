@@ -3,6 +3,8 @@ project:
   output-dir: docs
 
 website:
+  page-footer:
+    left: "Website made with [Quarto](https://quarto.org/), by LabGeo."
   navbar:
     title: false
     logo: imagens/Labgeo.png
@@ -11,10 +13,10 @@ website:
         text: Home
       - href: Historia/sobre.qmd
         text: Historia
-      - href: Estagiarios/Estagiarios.qmd
-        text: Estagiario
-      - href: pos/pos.qmd
-        text: Pos
+      - href: Integrantes/Estagiarios.qmd
+        text: Integrantes
+      - href: publicacao.qmd
+        text: Publicação
       
 
 format:

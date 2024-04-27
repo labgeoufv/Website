@@ -1,23 +1,79 @@
 [
   {
-    "objectID": "pos/pos.html",
-    "href": "pos/pos.html",
-    "title": "Estagiário",
+    "objectID": "publicacao.html",
+    "href": "publicacao.html",
+    "title": "",
     "section": "",
-    "text": "Oi tudo bem"
-  },
-  {
-    "objectID": "Historia/sobre.html",
-    "href": "Historia/sobre.html",
-    "title": "Historia do LabGeo",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "Recent posts / Posts recentes\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUtilizando Dplyr e ggplot2 | palmerpenguins\n\n\n\nPenguins\n\n\nDplyr\n\n\nggplot2\n\n\n\n\n\n\n\nGabriel Palucci Rosa\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Website",
+    "title": "",
     "section": "",
-    "text": "BEM VINDO AO LABGEOz\nAbrindo pacotes\n\nlibrary(dplyr, warn.conflicts = FALSE)\nlibrary(ggplot2, warn.conflicts = FALSE)\nlibrary(palmerpenguins, warn.conflicts = FALSE)\nlibrary(plotly, warn.conflicts = FALSE)\n\n\nplot &lt;- penguins %&gt;% \n  mutate(Especies = species, Nadadeira_mm = flipper_length_mm, Peso_g = body_mass_g) %&gt;% \n  select(Especies, Nadadeira_mm, Peso_g) %&gt;% \n  ggplot(aes(x = Nadadeira_mm, y = Peso_g, color = Especies)) +\n  geom_point(size = 3, alpha = 0.8) +\n  scale_color_manual(values = c(\"darkorange\", \"purple\", \"cyan4\")) +\n  labs(title = \"Relação tamanho de nadadeira e Peso\",\n       subtitle = \"Especies de penguins Adelie, Chinstrap e Gentoo\",\n       x = \"Comprimento da nadadeira (mm)\",\n       y = \"Peso (g)\",\n       color = \"Espécies de pinguins\")\n\n\nggplotly(username = plot)"
+    "text": "BEM VINDO AO LABGEO"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html",
+    "href": "posts/Tidy/tidyverse.html",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "",
+    "text": "Quando analisamos base de dados que contêm diversas colunas e linhas, se faz necessário saber comando no qual irá facilitar o “manejo” dos nossos dados. Podendo assim selecionar apenas algumas variávies ou alguns linhas. Alguns pessoas podem pensar usar outros sofwares do SQL no qual sua função está ligado diretamente a manipulação dos dados. Entretanto, é interessante utilizarmos o R! pois irá facilitar posteriormente a analisar os dados, não precisando importar e exportar base de dados de um sofware para outro\nAssim, nesse post pretendo mostrar formas interressantes de realizar a manipulação de dados utilizando pacotes de funções simples. Posteriormente realizar alguns plots para visualizar melhor os dados, pra não ficarmos apenas em tabelas chatas hehe."
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#rename",
+    "href": "posts/Tidy/tidyverse.html#rename",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Rename",
+    "text": "Rename\nUns dos primeiros argumentos que iremos utilizar é o rename que possibilita modificar o nome das nossas colunas. Como podemos observar no dados abaixos que traduzimos todas as colunas para português.\n\npinguim &lt;- pinguim %&gt;% \n           rename(Especies = species, \n                  Ilha = island,\n                  Tamanho_Bico_mm = bill_length_mm,\n                  Espessura_Bico_mm= bill_depth_mm,\n                  Nadadeira_mm = flipper_length_mm,\n                  Peso_g = body_mass_g,\n                  Sexo = sex,\n                  Ano = year)"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#slice",
+    "href": "posts/Tidy/tidyverse.html#slice",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Slice",
+    "text": "Slice\nO slice possibilita realizar um corte dos dados, selecionando apenas um fração das linhas. No exemplo selecionamos apenas as primeiras 10 linhas do dados\n\npinguim %&gt;% \n        slice(1:20) %&gt;% rmarkdown::paged_table(pinguim)"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#select",
+    "href": "posts/Tidy/tidyverse.html#select",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Select",
+    "text": "Select\n\npinguim %&gt;% \n            dplyr::select(Especies, Ilha, Peso_g) %&gt;%\n            rmarkdown::paged_table()"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#mutate",
+    "href": "posts/Tidy/tidyverse.html#mutate",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Mutate",
+    "text": "Mutate\n\npinguim %&gt;% \n      dplyr::mutate(Tam.Esp = Tamanho_Bico_mm/Espessura_Bico_mm) %&gt;%\n      dplyr::select(Especies, Ilha, Tam.Esp) %&gt;%\n      rmarkdown::paged_table()"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#filter",
+    "href": "posts/Tidy/tidyverse.html#filter",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Filter",
+    "text": "Filter\nFUNCIONA???\nComo o nome ja diz, o Filter tem como princípio a filtragemn do nosso base de dados com a utilização de paramétros como:\n== Igual\n&gt; Maior\n&lt; Menor\n&gt;= Maior e igual\n&lt;= Menor e Igual\n!= Diferente\n%in% Se está dentro\nis.na Sem valores\nPodemos adicionar condições como , para e e | para ou.\n\npinguim %&gt;% filter(Peso_g &gt; 1000, Espessura_Bico_mm &gt; 10) %&gt;% \n             rmarkdown::paged_table()"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#relocate",
+    "href": "posts/Tidy/tidyverse.html#relocate",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Relocate()",
+    "text": "Relocate()\nUtilizamos para relocar as colunas de posição em nossa base de dados\n\npinguim %&gt;% \n      relocate(Ilha, Sexo, Especies) %&gt;%\n      rmarkdown::paged_table()"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#arrange",
+    "href": "posts/Tidy/tidyverse.html#arrange",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Arrange()",
+    "text": "Arrange()\nOrganizar a nossa base de dados\n\npinguim %&gt;% \n      select(Especies, Ilha, Peso_g) %&gt;% \n      arrange(desc(Peso_g)) %&gt;%\n      rmarkdown::paged_table()"
+  },
+  {
+    "objectID": "posts/Tidy/tidyverse.html#group_by-summarise",
+    "href": "posts/Tidy/tidyverse.html#group_by-summarise",
+    "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
+    "section": "Group_by() / Summarise()",
+    "text": "Group_by() / Summarise()\n\npinguim %&gt;% group_by(Ilha, Especies) %&gt;%\n            summarise(PesoMaximo = max(Peso_g), Media_Nadadeira = mean(Nadadeira_mm)) %&gt;%\n            rmarkdown::paged_table()                 \n\n`summarise()` has grouped output by 'Ilha'. You can override using the\n`.groups` argument."
   }
 ]

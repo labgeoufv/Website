@@ -1,36 +1,5 @@
 ---
-title: "Website"
+title: ""
 ---
 
-BEM VINDO AO LABGEOz
-
-
-
-Abrindo pacotes
-```{r, }
-
-library(dplyr, warn.conflicts = FALSE)
-library(ggplot2, warn.conflicts = FALSE)
-library(palmerpenguins, warn.conflicts = FALSE)
-library(plotly, warn.conflicts = FALSE)
-
-```
-
-  
-```{r}
-plot <- penguins %>% 
-  mutate(Especies = species, Nadadeira_mm = flipper_length_mm, Peso_g = body_mass_g) %>% 
-  select(Especies, Nadadeira_mm, Peso_g) %>% 
-  ggplot(aes(x = Nadadeira_mm, y = Peso_g, color = Especies)) +
-  geom_point(size = 3, alpha = 0.8) +
-  scale_color_manual(values = c("darkorange", "purple", "cyan4")) +
-  labs(title = "Relação tamanho de nadadeira e Peso",
-       subtitle = "Especies de penguins Adelie, Chinstrap e Gentoo",
-       x = "Comprimento da nadadeira (mm)",
-       y = "Peso (g)",
-       color = "Espécies de pinguins")
-
-
-ggplotly(username = plot)
-```
-
+BEM VINDO AO LABGEO
