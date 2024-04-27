@@ -25,7 +25,7 @@
     "href": "posts/Tidy/tidyverse.html",
     "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
     "section": "",
-    "text": "Quando analisamos base de dados que contêm diversas colunas e linhas, se faz necessário saber comando no qual irá facilitar o “manejo” dos nossos dados. Podendo assim selecionar apenas algumas variávies ou alguns linhas. Alguns pessoas podem pensar usar outros sofwares do SQL no qual sua função está ligado diretamente a manipulação dos dados. Entretanto, é interessante utilizarmos o R! pois irá facilitar posteriormente a analisar os dados, não precisando importar e exportar base de dados de um sofware para outro\nAssim, nesse post pretendo mostrar formas interressantes de realizar a manipulação de dados utilizando pacotes de funções simples. Posteriormente realizar alguns plots para visualizar melhor os dados, pra não ficarmos apenas em tabelas chatas hehe."
+    "text": "Quando analisamos base de dados que contêm diversas colunas e linhas, se faz necessário saber comando no qual irá facilitar nossa manipulação dos nossos dados. Podendo assim selecionar apenas algumas variávies ou alguns linhas. Alguns pessoas podem pensar usar outros sofwares do SQL no qual sua função está ligado diretamente a manipulação dos dados. Entretanto, é interessante utilizarmos o R! pois irá facilitar posteriormente a analisar os dados, não precisando importar e exportar base de dados de um sofware para outro\nAssim, nesse post pretendo mostrar formas interressantes de realizar a manipulação de dados utilizando pacotes de funções simples. Posteriormente realizar alguns plots para visualizar melhor os dados, pra não ficarmos apenas em tabelas chatas hehe."
   },
   {
     "objectID": "posts/Tidy/tidyverse.html#rename",
@@ -39,7 +39,7 @@
     "href": "posts/Tidy/tidyverse.html#slice",
     "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
     "section": "Slice",
-    "text": "Slice\nO slice possibilita realizar um corte dos dados, selecionando apenas um fração das linhas. No exemplo selecionamos apenas as primeiras 10 linhas do dados\n\npinguim %&gt;% \n        slice(1:20) %&gt;% rmarkdown::paged_table(pinguim)"
+    "text": "Slice\nO slice possibilita realizar um corte dos dados, selecionando apenas um fração das linhas. No exemplo selecionamos apenas as primeiras 10 linhas do dados\n\npinguim %&gt;% \n        slice(1:10) %&gt;% rmarkdown::paged_table(pinguim)"
   },
   {
     "objectID": "posts/Tidy/tidyverse.html#select",
@@ -60,7 +60,7 @@
     "href": "posts/Tidy/tidyverse.html#filter",
     "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
     "section": "Filter",
-    "text": "Filter\nFUNCIONA???\nComo o nome ja diz, o Filter tem como princípio a filtragemn do nosso base de dados com a utilização de paramétros como:\n== Igual\n&gt; Maior\n&lt; Menor\n&gt;= Maior e igual\n&lt;= Menor e Igual\n!= Diferente\n%in% Se está dentro\nis.na Sem valores\nPodemos adicionar condições como , para e e | para ou.\n\npinguim %&gt;% filter(Peso_g &gt; 1000, Espessura_Bico_mm &gt; 10) %&gt;% \n             rmarkdown::paged_table()"
+    "text": "Filter\nComo o nome ja diz, o Filter tem como princípio a filtragemn do nosso base de dados com a utilização de paramétros como:\n== Igual\n&gt; Maior\n&lt; Menor\n&gt;= Maior e igual\n&lt;= Menor e Igual\n!= Diferente\n%in% Se está dentro\nis.na Sem valores\nPodemos adicionar condições como , para e e | para ou.\n\npinguim %&gt;% filter(Peso_g &gt; 1000, Espessura_Bico_mm &gt; 10) %&gt;% \n             rmarkdown::paged_table()"
   },
   {
     "objectID": "posts/Tidy/tidyverse.html#relocate",
