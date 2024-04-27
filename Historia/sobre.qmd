@@ -1,7 +1,12 @@
 ---
-title: "Historia do LabGeo"
+page-layout: article
 ---
 
+```{=html}
+<p style="font-size:40px; text-align: center; font-family: 'Garamond', sans-serif;" >
+  Labgeo
+</p>
+```
 
 
 ![](labgeo.png){fig-align="center" width="300"}

@@ -1,5 +1,5 @@
 ---
-title: ""
+page-layout: full
 ---
 
 BEM VINDO AO LABGEO

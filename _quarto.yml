@@ -12,7 +12,7 @@ website:
       - href: index.qmd
         text: Home
       - href: Historia/sobre.qmd
-        text: Historia
+        text: História
       - href: Integrantes/Estagiarios.qmd
         text: Integrantes
       - href: publicacao.qmd
