@@ -3,8 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "LabGeo"
   navbar:
+    title: false
+    logo: imagens/Labgeo.png
     right:
       - href: index.qmd
         text: Home
@@ -18,8 +19,8 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    page-layout: full
+    theme: 
+      - styles.scss
+    mainfont: Nunito
     toc: true
-
-

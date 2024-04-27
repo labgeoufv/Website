@@ -2,5 +2,4 @@
 title: "Estagiário"
 ---
 
-![Elpidio](elpidio.jpg){width="200px" height="200px"
-style="float: left; margin-right: 15px;"}
+![](elpidio.jpg){style="float: left; margin-right: 15px;" fig-align="left" width="300"}

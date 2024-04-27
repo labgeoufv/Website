@@ -2,9 +2,13 @@
 title: "Historia do LabGeo"
 ---
 
+![](labgeo.png){fig-align="center" width="300"}
 
 
-About this site
+
+
+
+
 
 ```{r}
 1 + 1
