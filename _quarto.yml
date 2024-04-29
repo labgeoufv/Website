@@ -6,6 +6,7 @@ website:
   page-footer:
     left: "Website made with [Quarto](https://quarto.org/), by LabGeo."
   navbar:
+    search: TRUE
     title: false
     logo: imagens/Labgeo.png
     right:
@@ -17,6 +18,7 @@ website:
         text: Integrantes
       - href: publicacao.qmd
         text: Publicação
+
       
 
 format:

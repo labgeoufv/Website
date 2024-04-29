@@ -15,7 +15,7 @@ categories:
 
 # Introduction
 
-Quando analisamos base de dados que contêm diversas colunas e linhas, se faz necessário saber comando no qual irá facilitar nossa manipulação dos nossos dados. Podendo assim selecionar apenas algumas variávies ou alguns linhas. Alguns pessoas podem pensar usar outros sofwares do SQL no qual sua função está ligado diretamente a manipulação dos dados. Entretanto, é interessante utilizarmos o R! pois irá facilitar posteriormente a analisar os dados, não precisando importar e exportar base de dados de um sofware para outro
+Quando analisamos base de dados que contêm diversas colunas e linhas, se faz necessário saber comando no qual irá facilitar a manipulação dos nossos dados. Podendo assim selecionar apenas algumas variávies ou alguns linhas. Alguns pessoas podem pensar usar outros sofwares do SQL no qual sua função está ligado diretamente a manipulação dos dados. Entretanto, é interessante utilizarmos o R! pois irá facilitar posteriormente a analisar os dados, não precisando importar e exportar base de dados de um sofware para outro
 
 Assim, nesse post pretendo mostrar formas interressantes de realizar a manipulação de dados utilizando pacotes de funções simples. Posteriormente realizar alguns plots para visualizar melhor os dados, pra não ficarmos apenas em tabelas chatas hehe.
 
