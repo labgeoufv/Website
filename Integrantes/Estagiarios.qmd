@@ -5,16 +5,18 @@ title: ""
 ```{=html}
 <div style="display: flex; justify-content: space-between; text-align:center">
   <div class="avatar">
-    <img src="elpidio.jpg" alt="Left Avatar">
-    <p>Elpidio</p>
+    <figure>
+      <img src="elpidio.jpg" alt="Elpidio">
+      <figcaption>Elpidio</figcaption>
+    </figure>
   </div>
   <div class="avatar">
-    <img src="Carlos.jpg" alt="Middle Avatar">
-    <!-- Text for Middle Avatar (if any) -->
+    <img src="Carlos.jpg" alt="Carlos">
+    <figcaption>Carlos</figcaption>
   </div>
   <div class="avatar">
-    <img src="marcio.jpg" alt="Right Avatar">
-    <!-- Text for Right Avatar (if any) -->
+    <img src="marcio.jpg" alt="Marcio">
+    <figcaption>Marcio</figcaption>
   </div>
 </div>
 ```

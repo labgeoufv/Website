@@ -37,9 +37,10 @@ $code-block-bg: $cream;
 
 /* ELEMENTOS PARA AJUSTAR AS IMAGENS */
 
+
 .avatar {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%; /* Isso cria um círculo */
   overflow: hidden; /* Garante que a imagem seja cortada para caber no círculo */
   display: flex;
