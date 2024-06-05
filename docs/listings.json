@@ -2,6 +2,7 @@
   {
     "listing": "/publicacao.html",
     "items": [
+      "/posts/metricas/metricas.html",
       "/posts/Tidy/tidyverse.html"
     ]
   }
