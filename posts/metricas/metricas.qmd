@@ -1,7 +1,5 @@
 ---
-image: ppa.png
 page-layout: article
-title-block-banner: pp.png
 date: "2023-12-22"
 title: "Utilizando Dplyr e ggplot2 | palmerpenguins"
 author: "Gabriel Palucci Rosa"
@@ -13,7 +11,7 @@ categories:
   - ggplot2
 ---
 
-teste
+
 
 ```{r}
 head(iris)
