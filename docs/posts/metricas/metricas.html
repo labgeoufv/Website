@@ -151,7 +151,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Content</h2>
+   
+  <ul>
+  <li><a href="#métricas-de-performance-de-modelos-de-regressão" id="toc-métricas-de-performance-de-modelos-de-regressão" class="nav-link active" data-scroll-target="#métricas-de-performance-de-modelos-de-regressão">Métricas de Performance de Modelos de Regressão</a></li>
+  <li><a href="#considerações-finais" id="toc-considerações-finais" class="nav-link" data-scroll-target="#considerações-finais">Considerações Finais</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,9 +167,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title">
 <h1 class="title">Utilizando Dplyr e ggplot2 | palmerpenguins</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Penguins</div>
-    <div class="quarto-category">Dplyr</div>
-    <div class="quarto-category">ggplot2</div>
+    <div class="quarto-category">Machine Leaning</div>
+    <div class="quarto-category">Metricas</div>
   </div>
   </div>
 
@@ -204,8 +210,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 6          5.4         3.9          1.7         0.4  setosa</code></pre>
 </div>
 </div>
+<section id="métricas-de-performance-de-modelos-de-regressão" class="level3">
+<h3 class="anchored" data-anchor-id="métricas-de-performance-de-modelos-de-regressão">Métricas de Performance de Modelos de Regressão</h3>
+<p>Os modelos de regressão são amplamente utilizados em machine learning para prever valores numéricos contínuos. Para avaliar a performance desses modelos, utilizamos várias métricas quantitativas. As mais comuns são R-quadrado (R²), Root Mean Squared Error (RMSE) e Mean Absolute Error (MAE). Cada uma dessas métricas tem suas próprias características, vantagens e desvantagens.</p>
+<section id="r-quadrado-r²" class="level4">
+<h4 class="anchored" data-anchor-id="r-quadrado-r²">R-quadrado (R²)</h4>
+<p>O R-quadrado é uma métrica que indica a proporção da variância dos dados que é explicada pelo modelo. Ele varia entre 0 e 1, onde 1 indica que o modelo explica toda a variância dos dados.</p>
+<p><strong>Cálculo:</strong></p>
+<p>[ R^2 = 1 - ]</p>
+<ul>
+<li>( y_i ) são os valores reais.</li>
+<li>( _i ) são os valores preditos pelo modelo.</li>
+<li>( {y} ) é a média dos valores reais.</li>
+</ul>
+<p><strong>Vantagens:</strong> - Fácil de interpretar. - Indica a proporção da variância explicada pelo modelo.</p>
+<p><strong>Desvantagens:</strong> - Pode ser enganoso em modelos com muitos preditores. - Não penaliza modelos complexos.</p>
+</section>
+<section id="root-mean-squared-error-rmse" class="level4">
+<h4 class="anchored" data-anchor-id="root-mean-squared-error-rmse">Root Mean Squared Error (RMSE)</h4>
+<p>O RMSE mede a média das diferenças ao quadrado entre os valores reais e os valores preditos. Ele dá uma ideia da magnitude do erro.</p>
+<p><strong>Cálculo:</strong></p>
+<p>[ RMSE = ]</p>
+<p><strong>Vantagens:</strong> - Penaliza erros grandes, pois os erros são elevados ao quadrado. - Útil para comparar a performance de diferentes modelos.</p>
+<p><strong>Desvantagens:</strong> - Pode ser influenciado por outliers, já que eleva os erros ao quadrado.</p>
+</section>
+<section id="mean-absolute-error-mae" class="level4">
+<h4 class="anchored" data-anchor-id="mean-absolute-error-mae">Mean Absolute Error (MAE)</h4>
+<p>O MAE calcula a média das diferenças absolutas entre os valores reais e os valores preditos. Ele fornece uma visão clara da magnitude do erro sem amplificar erros grandes.</p>
+<p><strong>Cálculo:</strong></p>
+<p>[ MAE = _{i=1}^{n} |y_i - _i| ]</p>
+<p><strong>Vantagens:</strong> - Fácil de interpretar. - Menos sensível a outliers comparado ao RMSE.</p>
+<p><strong>Desvantagens:</strong> - Não penaliza erros grandes de forma mais severa.</p>
+</section>
+</section>
+<section id="considerações-finais" class="level3">
+<h3 class="anchored" data-anchor-id="considerações-finais">Considerações Finais</h3>
+<p>Ao avaliar modelos de regressão, é importante considerar múltiplas métricas para ter uma visão completa da performance. O R² é útil para entender quanta variação do alvo é explicada pelo modelo, mas pode ser otimista em modelos complexos. O RMSE fornece uma ideia da magnitude dos erros, penalizando erros grandes, enquanto o MAE oferece uma interpretação direta do erro médio.</p>
+<p>Escolher a métrica certa depende do contexto e dos objetivos do modelo. Em alguns casos, a combinação de várias métricas pode oferecer uma análise mais robusta e abrangente da performance do modelo.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
