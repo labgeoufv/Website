@@ -103,6 +103,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -217,28 +246,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h4 class="anchored" data-anchor-id="r-quadrado-r²">R-quadrado (R²)</h4>
 <p>O R-quadrado é uma métrica que indica a proporção da variância dos dados que é explicada pelo modelo. Ele varia entre 0 e 1, onde 1 indica que o modelo explica toda a variância dos dados.</p>
 <p><strong>Cálculo:</strong></p>
-<p>[ R^2 = 1 - ]</p>
-<ul>
-<li>( y_i ) são os valores reais.</li>
-<li>( _i ) são os valores preditos pelo modelo.</li>
-<li>( {y} ) é a média dos valores reais.</li>
-</ul>
+<p><span class="math display">\[
+R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
+\]</span> - ( y_i ) são os valores reais. - ( _i ) são os valores preditos pelo modelo. - ( {y} ) é a média dos valores reais.</p>
 <p><strong>Vantagens:</strong> - Fácil de interpretar. - Indica a proporção da variância explicada pelo modelo.</p>
 <p><strong>Desvantagens:</strong> - Pode ser enganoso em modelos com muitos preditores. - Não penaliza modelos complexos.</p>
 </section>
 <section id="root-mean-squared-error-rmse" class="level4">
 <h4 class="anchored" data-anchor-id="root-mean-squared-error-rmse">Root Mean Squared Error (RMSE)</h4>
 <p>O RMSE mede a média das diferenças ao quadrado entre os valores reais e os valores preditos. Ele dá uma ideia da magnitude do erro.</p>
-<p><strong>Cálculo:</strong></p>
-<p>[ RMSE = ]</p>
-<p><strong>Vantagens:</strong> - Penaliza erros grandes, pois os erros são elevados ao quadrado. - Útil para comparar a performance de diferentes modelos.</p>
+<p><strong>Cálculo:</strong> <span class="math display">\[
+RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} \
+\]</span> <strong>Vantagens:</strong> - Penaliza erros grandes, pois os erros são elevados ao quadrado. - Útil para comparar a performance de diferentes modelos.</p>
 <p><strong>Desvantagens:</strong> - Pode ser influenciado por outliers, já que eleva os erros ao quadrado.</p>
 </section>
 <section id="mean-absolute-error-mae" class="level4">
 <h4 class="anchored" data-anchor-id="mean-absolute-error-mae">Mean Absolute Error (MAE)</h4>
 <p>O MAE calcula a média das diferenças absolutas entre os valores reais e os valores preditos. Ele fornece uma visão clara da magnitude do erro sem amplificar erros grandes.</p>
 <p><strong>Cálculo:</strong></p>
-<p>[ MAE = _{i=1}^{n} |y_i - _i| ]</p>
+<p><span class="math display">\[
+MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
+\]</span></p>
 <p><strong>Vantagens:</strong> - Fácil de interpretar. - Menos sensível a outliers comparado ao RMSE.</p>
 <p><strong>Desvantagens:</strong> - Não penaliza erros grandes de forma mais severa.</p>
 </section>

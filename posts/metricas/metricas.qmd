@@ -25,8 +25,9 @@ O R-quadrado é uma métrica que indica a proporção da variância dos dados qu
 
 **Cálculo:**
 
-\[ R\^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2} \]
-
+$$
+ R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2} 
+$$
 -   ( y_i ) são os valores reais.
 -   ( \hat{y}\_i ) são os valores preditos pelo modelo.
 -   ( \bar{y} ) é a média dos valores reais.
@@ -40,9 +41,9 @@ O R-quadrado é uma métrica que indica a proporção da variância dos dados qu
 O RMSE mede a média das diferenças ao quadrado entre os valores reais e os valores preditos. Ele dá uma ideia da magnitude do erro.
 
 **Cálculo:**
-
-\[ RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} \]
-
+$$
+ RMSE = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2} \
+$$
 **Vantagens:** - Penaliza erros grandes, pois os erros são elevados ao quadrado. - Útil para comparar a performance de diferentes modelos.
 
 **Desvantagens:** - Pode ser influenciado por outliers, já que eleva os erros ao quadrado.
@@ -53,7 +54,10 @@ O MAE calcula a média das diferenças absolutas entre os valores reais e os val
 
 **Cálculo:**
 
-\[ MAE = \frac{1}{n} \sum\_{i=1}\^{n} \|y_i - \hat{y}\_i\| \]
+$$
+MAE = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
+$$
+
 
 **Vantagens:** - Fácil de interpretar. - Menos sensível a outliers comparado ao RMSE.
 
