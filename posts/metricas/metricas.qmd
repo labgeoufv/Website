@@ -1,8 +1,8 @@
 ---
 page-layout: article
 date: "2023-12-22"
-title: "Utilizando Dplyr e ggplot2 | palmerpenguins"
-author: "Gabriel Palucci Rosa"
+title: "Métricas de Performance de Modelos de Regressão"
+author: "Elpídio Filho & ChatGPT"
 toc: true
 toc-title: "Table of Content"
 categories:
