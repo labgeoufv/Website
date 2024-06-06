@@ -7,13 +7,9 @@ toc: true
 toc-title: "Table of Content"
 categories:
   - Machine Leaning
-  - Metricas
+  - Métricas de performance de modelos
 ---
 
-```{r}
-head(iris)
-
-```
 
 ### Métricas de Performance de Modelos de Regressão
 
