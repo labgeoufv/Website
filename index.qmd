@@ -4,4 +4,5 @@ page-layout: full
 ---
 
 BEM VINDO AO LABGEO voce esta no laboratorio de pedometria e machine learning, nosso
-laboratório todos são bem vindos. Nosso objetivo é divugação ciêntifica.
+laboratório todos são bem vindos. Nosso objetivo é divugação ciêntifica. Aqui você
+ira encontrar diversos trabalhos realizados pelo nosso grupo.
