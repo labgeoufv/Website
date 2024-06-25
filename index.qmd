@@ -3,4 +3,5 @@ page-layout: full
 
 ---
 
-BEM VINDO AO LABGEO voce esta no laboratorio de pedometria e machine learning
+BEM VINDO AO LABGEO voce esta no laboratorio de pedometria e machine learning, nosso
+laboratório todos são bem vindos.
