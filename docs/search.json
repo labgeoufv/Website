@@ -7,25 +7,32 @@
     "text": "Recent posts / Posts recentes\n\n\n\n\n\n\n\n\n\n\n\n\n\nMétricas de Performance de Modelos de Regressão\n\n\n\nMachine Leaning\n\n\nMétricas de performance de modelos\n\n\n\n\n\n\n\nElpídio Filho & ChatGPT\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUtilizando Dplyr e ggplot2 | palmerpenguins\n\n\n\nPenguins\n\n\nDplyr\n\n\nggplot2\n\n\n\n\n\n\n\nGabriel Palucci Rosa\n\n\nDec 22, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "Integrantes/Estagiarios.html",
-    "href": "Integrantes/Estagiarios.html",
-    "title": "",
+    "objectID": "posts/metricas/metricas.html",
+    "href": "posts/metricas/metricas.html",
+    "title": "Métricas de Performance de Modelos de Regressão",
     "section": "",
-    "text": "Elpidio\n    \n  \n  \n    \n    Carlos\n  \n  \n    \n    Marcio"
-  },
-  {
-    "objectID": "Historia/sobre.html",
-    "href": "Historia/sobre.html",
-    "title": "",
-    "section": "",
-    "text": "Labgeo"
+    "text": "Métricas de Performance de Modelos de Regressão\nOs modelos de regressão são amplamente utilizados em machine learning para prever valores numéricos contínuos. Para avaliar a performance desses modelos, utilizamos várias métricas quantitativas. As mais comuns são R-quadrado (R²), Root Mean Squared Error (RMSE) e Mean Absolute Error (MAE). Cada uma dessas métricas tem suas próprias características, vantagens e desvantagens.\n\nR-quadrado (R²)\nO R-quadrado é uma métrica que indica a proporção da variância dos dados que é explicada pelo modelo. Ele varia entre 0 e 1, onde 1 indica que o modelo explica toda a variância dos dados.\nCálculo:\n\\[\nR^2 = 1 - \\frac{\\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2}{\\sum_{i=1}^{n} (y_i - \\bar{y})^2}\n\\] - ( y_i ) são os valores reais. - ( _i ) são os valores preditos pelo modelo. - ( {y} ) é a média dos valores reais.\nVantagens: - Fácil de interpretar. - Indica a proporção da variância explicada pelo modelo.\nDesvantagens: - Pode ser enganoso em modelos com muitos preditores. - Não penaliza modelos complexos.\n\n\nRoot Mean Squared Error (RMSE)\nO RMSE mede a média das diferenças ao quadrado entre os valores reais e os valores preditos. Ele dá uma ideia da magnitude do erro.\nCálculo: \\[\nRMSE = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2} \\\n\\] Vantagens: - Penaliza erros grandes, pois os erros são elevados ao quadrado. - Útil para comparar a performance de diferentes modelos.\nDesvantagens: - Pode ser influenciado por outliers, já que eleva os erros ao quadrado.\n\n\nMean Absolute Error (MAE)\nO MAE calcula a média das diferenças absolutas entre os valores reais e os valores preditos. Ele fornece uma visão clara da magnitude do erro sem amplificar erros grandes.\nCálculo:\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^{n} |y_i - \\hat{y}_i|\n\\]\nVantagens: - Fácil de interpretar. - Menos sensível a outliers comparado ao RMSE.\nDesvantagens: - Não penaliza erros grandes de forma mais severa.\n\n\n\nConsiderações Finais\nAo avaliar modelos de regressão, é importante considerar múltiplas métricas para ter uma visão completa da performance. O R² é útil para entender quanta variação do alvo é explicada pelo modelo, mas pode ser otimista em modelos complexos. O RMSE fornece uma ideia da magnitude dos erros, penalizando erros grandes, enquanto o MAE oferece uma interpretação direta do erro médio.\nEscolher a métrica certa depende do contexto e dos objetivos do modelo. Em alguns casos, a combinação de várias métricas pode oferecer uma análise mais robusta e abrangente da performance do modelo."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "BEM VINDO AO LABGEO"
+    "text": "BEM VINDO AO LABGEO voce esta no laboratorio de pedometria e machine learning"
+  },
+  {
+    "objectID": "Historia/sobre.html",
+    "href": "Historia/sobre.html",
+    "title": "",
+    "section": "",
+    "text": "Labgeo\n\nOla Bem vindo Ao lagbeoufv, laboratório de 000"
+  },
+  {
+    "objectID": "Integrantes/Estagiarios.html",
+    "href": "Integrantes/Estagiarios.html",
+    "title": "",
+    "section": "",
+    "text": "bem vindoo\n\n  \n    \n      \n      Elpidio\n    \n  \n  \n    \n    Carlos\n  \n  \n    \n    Marcio"
   },
   {
     "objectID": "posts/Tidy/tidyverse.html",
@@ -89,12 +96,5 @@
     "title": "Utilizando Dplyr e ggplot2 | palmerpenguins",
     "section": "Group_by() / Summarise()",
     "text": "Group_by() / Summarise()\n\npinguim %&gt;% group_by(Ilha, Especies) %&gt;%\n            summarise(PesoMaximo = max(Peso_g), Media_Nadadeira = mean(Nadadeira_mm)) %&gt;%\n            rmarkdown::paged_table()                 \n\n`summarise()` has grouped output by 'Ilha'. You can override using the\n`.groups` argument."
-  },
-  {
-    "objectID": "posts/metricas/metricas.html",
-    "href": "posts/metricas/metricas.html",
-    "title": "Métricas de Performance de Modelos de Regressão",
-    "section": "",
-    "text": "Métricas de Performance de Modelos de Regressão\nOs modelos de regressão são amplamente utilizados em machine learning para prever valores numéricos contínuos. Para avaliar a performance desses modelos, utilizamos várias métricas quantitativas. As mais comuns são R-quadrado (R²), Root Mean Squared Error (RMSE) e Mean Absolute Error (MAE). Cada uma dessas métricas tem suas próprias características, vantagens e desvantagens.\n\nR-quadrado (R²)\nO R-quadrado é uma métrica que indica a proporção da variância dos dados que é explicada pelo modelo. Ele varia entre 0 e 1, onde 1 indica que o modelo explica toda a variância dos dados.\nCálculo:\n\\[\nR^2 = 1 - \\frac{\\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2}{\\sum_{i=1}^{n} (y_i - \\bar{y})^2}\n\\] - ( y_i ) são os valores reais. - ( _i ) são os valores preditos pelo modelo. - ( {y} ) é a média dos valores reais.\nVantagens: - Fácil de interpretar. - Indica a proporção da variância explicada pelo modelo.\nDesvantagens: - Pode ser enganoso em modelos com muitos preditores. - Não penaliza modelos complexos.\n\n\nRoot Mean Squared Error (RMSE)\nO RMSE mede a média das diferenças ao quadrado entre os valores reais e os valores preditos. Ele dá uma ideia da magnitude do erro.\nCálculo: \\[\nRMSE = \\sqrt{\\frac{1}{n} \\sum_{i=1}^{n} (y_i - \\hat{y}_i)^2} \\\n\\] Vantagens: - Penaliza erros grandes, pois os erros são elevados ao quadrado. - Útil para comparar a performance de diferentes modelos.\nDesvantagens: - Pode ser influenciado por outliers, já que eleva os erros ao quadrado.\n\n\nMean Absolute Error (MAE)\nO MAE calcula a média das diferenças absolutas entre os valores reais e os valores preditos. Ele fornece uma visão clara da magnitude do erro sem amplificar erros grandes.\nCálculo:\n\\[\nMAE = \\frac{1}{n} \\sum_{i=1}^{n} |y_i - \\hat{y}_i|\n\\]\nVantagens: - Fácil de interpretar. - Menos sensível a outliers comparado ao RMSE.\nDesvantagens: - Não penaliza erros grandes de forma mais severa.\n\n\n\nConsiderações Finais\nAo avaliar modelos de regressão, é importante considerar múltiplas métricas para ter uma visão completa da performance. O R² é útil para entender quanta variação do alvo é explicada pelo modelo, mas pode ser otimista em modelos complexos. O RMSE fornece uma ideia da magnitude dos erros, penalizando erros grandes, enquanto o MAE oferece uma interpretação direta do erro médio.\nEscolher a métrica certa depende do contexto e dos objetivos do modelo. Em alguns casos, a combinação de várias métricas pode oferecer uma análise mais robusta e abrangente da performance do modelo."
   }
 ]
